@@ -1,3 +1,9 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hellow world!</text>
 <button size="mini">按钮</button>
+<view>{{info.name}}</view>
+<view>{{info.gender}}</view>
+<view>{{info.age}}</view>
+<view>{{counter}}</view>
+<button bindtap="handleDecrement" size="mini">+</button>
+<button bindtap="handleIncrement" size="mini">-</button>
