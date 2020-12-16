@@ -1,5 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hellow world!</text>
 <button size="mini">按钮</button>
-<view>知识点一</view>
-<view>这是测试tag的</view>
+<view>知识点二</view>
+<view>这是测试tag的2</view>
