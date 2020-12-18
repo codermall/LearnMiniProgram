@@ -1,5 +1,12 @@
 // pages/home/home.js
+
+const app = getApp()
+
 Page({
+
+  handleGetUserInfo(option) {
+    console.log(option);
+  },
 
   /**
    * 页面的初始数据
@@ -11,56 +18,19 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad() {
+    /* 页面被加载时执行 */ 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onShow() {
+    /* 页面显示时执行 */ 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  onReady() {
+    /* 页面初次渲染完成时执行 */ 
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  onHide() {
+    /* 页面被隐藏时执行 */ 
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onUnload() {
+    /* 当页面被摧毁时执行 */
   }
 })
