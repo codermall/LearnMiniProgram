@@ -3,3 +3,21 @@
   color: red;
   font-size: 20px;
 }
+
+.btn {
+  background-color: red;
+}
+
+.view {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.styleView {
+  background-color: blue;
+}
+
+input {
+  border: 1px solid red;
+}

@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hellow world!</text>
 <button size="mini">按钮</button>
+<text user-select>\nHellow World\n</text>
+<view class="view" hover-class="styleView">
+  <button size="mini" hover-class="btn" hover-stop-propagation>按钮</button>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息</button>
+<!-- <image wx:for="{{1}}" src="/assets/test/MVVMPattern.png" lazy-load  bindload="handleLoad"></image> -->
+
+<input type="number" placeholder="请您输入" />

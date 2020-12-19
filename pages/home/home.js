@@ -5,7 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
+    loadNum: 0
+  },
 
+  handleGetUserInfo(options) {
+    console.log(1111);
+    console.log(options);
+  },
+
+  handleLoad() {
+
+    console.log(this.data.loadNum);
+    this.setData({
+      loadNum: this.data.loadNum + 1
+    })
   },
 
   /**

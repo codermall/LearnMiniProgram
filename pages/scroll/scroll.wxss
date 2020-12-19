@@ -1,0 +1,29 @@
+/* pages/scroll/scroll.wxss */
+/* 测试x 方向上的滚动 */
+.container1 {
+  white-space: nowrap;
+  background-color: red;
+}
+
+.item1 {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+}
+/* ***************** */
+/* 测试y 方向上的滚动 */
+.container2 {
+  height: 200px;
+  background-color: red;
+  margin: 20px 0;
+}
+
+.item2 {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+/* *************** */
