@@ -1,0 +1,12 @@
+<template name="mal">
+  <button>{{btn}}</button>
+  <view>{{value}}</view>
+</template>
+
+<template name="movies">
+  <block wx:for="{{movies}}" wx:for-item="message" wx:for-index='i' wx:key='i'>
+    <block wx:for="{{message}}" wx:key='index'>
+      <view>{{item}}</view>
+    </block>
+  </block>
+</template>

@@ -1,0 +1,19 @@
+<!--pages/template/template.wxml-->
+<block wx:for="{{movies}}" wx:key='index1' wx:for-item='item1' wx:for-index="index1">
+  <view>{{item1}}</view>
+</block>
+
+
+<view>------------------</view>
+
+<template name="mal">
+  <button size="mini">{{btn}}</button>
+  <view>{{value}}</view>
+</template>
+
+<template is='mal' data="{{...info}}" />
+
+<import src="/pages/template/testTemplate.wxml" />
+
+<template is='movies' data="{{movies}}" />
+<template is='mal' data="{{...info}}" />

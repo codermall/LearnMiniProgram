@@ -1,0 +1,18 @@
+<!--pages/wxs/wxs.wxml-->
+<view>{{price}}</view>
+
+
+<!-- 引入wxs文件 -->
+<wxs src='../../wxs/test.wxs' module="format"></wxs>
+<view>{{format.priceFormat(price, 2)}}</view>
+
+
+<!-- 
+  使用wxs 是为了在wxml 中处理一些数据的 ；如果直接使用js 的话，小程序是不支持直接在wxml 中使用js 中的逻辑代码去处理数据；
+  这时候，我们只能使用wxs 去处理这些数据 ；这个方法类似于vue 中的filter ；
+  如何使用wxs 呢？
+    1、创建一个wxs 文件，你可以直接创建一个公共的wxs 文件包，将所有的wxs 文件放入这个文件包下，这样使得这个项目更加的清晰；
+    2、创建好wxs 文件后，写入你的逻辑代码函数，使用导出语句 moudule.exports = {} 导出函数即可；
+    3、在你要使用的地方引入这个wxs 文件；这需要注意：只能使用相对路径, --- <wxs src='' module='xxx' />
+      这其中的module 就是你要调用的那个wxs 文件 <view>{{xxx.priceFormate(price, 2)}}</view>
+ -->
