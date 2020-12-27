@@ -3,3 +3,48 @@
   color: red;
   font-size: 20px;
 }
+
+.container {
+  width: 300rpx;
+  height: 300rpx;
+  background-color: orange;
+}
+
+.outer {
+  width: 400rpx;
+  height: 400rpx;
+  background-color: pink;
+}
+
+.inner {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: orange;
+}
+
+.pass-on-options {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+}
+
+.module3 {
+  width: 200rpx;
+  height: 200rpx;
+  background-color:pink;
+}
+
+.module2 {
+  width: 400rpx;
+  height: 400rpx;
+  background-color:skyblue;
+}
+
+.module1 {
+  width: 600rpx;
+  height: 600rpx;
+  background-color:orange;
+}

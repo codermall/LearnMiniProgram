@@ -1,3 +1,34 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hellow world!</text>
 <button size="mini">按钮</button>
+
+<view class="container" bind:tap='handleTap' 
+                        bind:touchstart='handleTouchstart' 
+                        bind:touchend='handleTouchend' 
+                        bind:touchmove='handleTouchmove' 
+                        bind:longpress='handleLongpress'></view>
+
+<button size="mini" bindtap="handleEventObj">事件对象展示</button>
+<button size="mini">演示</button>
+
+<view class="outer" id="outer" bindtap="handleOutertap">
+  外层
+  <view class="inner" id="inner" bindtap="handleInnertap">内层</view>
+</view>
+
+<view>---------事件参数的传递------------</view>
+<view class="pass-on-options">
+  <block wx:for="{{showData}}" wx:key='index'>
+    <view class="item" bindtap="handlePassonOptions" 
+                      data-item="{{item}}" 
+                      data-index="{{index}}">
+                    {{item}}</view>
+  </block>
+</view>
+
+<view>------------事件捕获 && 事件冒泡-----------</view>
+<view class="module1" capture-bind:tap='handleCaptureModule1' bindtap="handleBindModule1">1
+  <view class="module2" capture-bind:tap='handleCaptureModule2' bindtap="handleBindModule2">2
+    <view class="module3" capture-bind:tap='handleCaptureModule3' catchtap="handleBindModule3">3</view>
+  </view>
+</view>

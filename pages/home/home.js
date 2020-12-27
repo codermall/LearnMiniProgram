@@ -5,62 +5,66 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showData: ['one', 'two', 'three']
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleTap() {
+    console.log('bind:tap');
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleTouchstart() {
+    console.log('bind: touchstart');
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleTouchend() {
+    console.log('bind: touchend');
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleLongpress() {
+    console.log('bind: longpress');
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handleTouchmove() {
+    console.log('bind: touchmove');
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  // 介绍事件对象
+  handleEventObj(event) {
+    console.log('事件对象', event);
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  handleOutertap(event) {
+    console.log(event);
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  handleInnertap(event) {
+    console.log(event);
+  },
 
+  /* 事件参数传递 */ 
+  handlePassonOptions(event) {
+    console.log(event);
+    const dataset = event.target.dataset
+    console.log(dataset);
+  },
+
+  handleCaptureModule1() {
+    console.log('handleCaptureModule1');
+  },
+  handleBindModule1() {
+    console.log('handleBindModule1');
+  },
+  handleCaptureModule2() {
+    console.log('handleCaptureModule2');
+  },
+  handleBindModule2() {
+    console.log('handleBindModule2');
+  },
+  handleCaptureModule3() {
+    console.log('handleCaptureModule3');
+  },
+  handleBindModule3() {
+    console.log('handleBindModule3');
   }
+
 })
