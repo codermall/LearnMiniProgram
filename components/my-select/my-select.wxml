@@ -1,0 +1,2 @@
+<!--components/my-select/my-select.wxml-->
+<view>计数器：{{counter}}</view>

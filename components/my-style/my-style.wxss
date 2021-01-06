@@ -1,0 +1,11 @@
+/* components/my-style/my-style.wxss */
+
+/* .title {
+  color: red;
+  font-size: 40rpx;
+  font-weight: 700;
+} */
+
+.container {
+  background: skyblue;
+}

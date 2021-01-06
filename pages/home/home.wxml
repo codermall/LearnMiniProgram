@@ -1,3 +1,35 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hellow world!</text>
 <button size="mini">按钮</button>
+
+
+<my-cpn />
+
+<my-style />
+
+<my-props title='我是mal标题' titleclass='titlecolor'></my-props>
+
+<view>计数器: {{counter}}</view>
+<my-event bind:handleIncrement='handleIncrement' />
+
+<!-- tabbar 自定义组件 -->
+<w-tabbar title='{{["衣服", "裤子", "鞋子"]}}' bind:toggleTab='toggleTab' />
+<block wx:if="{{tabIndex == 0}}">
+  <view>111</view>
+</block>
+<block wx:if="{{tabIndex == 1}}">
+  <view>222</view>
+</block>
+<block wx:if="{{tabIndex == 2}}">
+  <view>333</view>
+</block>
+
+<button size="mini" bind:tap='handleCpnIncrement'>修改组件中的数据</button>
+<my-select id="sel-id" />
+
+<view>---------------------</view>
+<multiple-slot>
+  <view slot='slot1'>第一个插槽</view>
+  <button size="mini" slot='slot2'>第二个插槽</button>
+  <view slot='slot3'>第三个插槽</view>
+</multiple-slot>

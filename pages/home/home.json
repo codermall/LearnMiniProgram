@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-cpn": "/components/my-cpn/my-cpn",
+    "my-style": "/components/my-style/my-style",
+    "my-props": "/components/my-props/my-props",
+    "my-event": "/components/my-event/my-event",
+    "w-tabbar": "/components/w-tabbar/w-tabbar",
+    "my-select": "/components/my-select/my-select",
+    "multiple-slot": "/components/multiple-slot/multiple-slot"
+  }
 }
