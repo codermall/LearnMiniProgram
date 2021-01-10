@@ -1,2 +1,4 @@
 <!--pages/about/about.wxml-->
 <text>pages/about/about.wxml</text>
+
+<navigator url="/pages/home/home" open-type="switchTab">切换到home</navigator>

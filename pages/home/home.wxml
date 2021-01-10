@@ -1,3 +1,10 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hellow world!</text>
+<text class="title">{{title}}</text>
 <button size="mini">按钮</button>
+
+<navigator url="/pages/detail/detail">页面跳转</navigator>  <!-- 当前的跳转是默认navigator跳转 不能tab切换 -->
+<navigator url="/pages/about/about" open-type="switchTab">跳转(switchTab -> tab页面切换)</navigator>
+
+<navigator url="/pages/detail/detail?id='11'&name='mal'&gender='男'">跳转携带参数</navigator>
+
+<button size="mini" bind:tap='handleCode'>测试代码跳转按钮</button>
